@@ -4,15 +4,15 @@ const Work = () => {
   return (
     <div className="container">
       <p className="container__title">
-        &mdash; professional work ✿
+        &mdash; my blogs ✿
         <span className="container__subtitle">
-          contact me for my full portfolio!
+          you can see all of my blogs in the medium!
         </span>
       </p>
       <div className="projects hide-on-mobile">
         <div className="project project--indigo">
           <div className="project__image">
-            <img src="/assets/images/metageneric.png" alt="paypal partner" />
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qiI10EyJE6Hp5qUgarhedg.jpeg" alt="paypal partner" />
           </div>
           <div className="project__body">
             <div className="project__overview">
@@ -39,7 +39,7 @@ const Work = () => {
 
         <div className="project project--blue">
           <div className="project__image">
-            <img src="/assets/images/partnersmain.png" alt="paypal partner" />
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hSL8DalTIj5_8_rqJ13UzQ.jpeg" alt="paypal partner" />
           </div>
           <div className="project__body">
             <div className="project__overview">
@@ -66,7 +66,7 @@ const Work = () => {
         </div>
         <div className="project project--pink">
           <div className="project__image">
-            <img src="/assets/images/linking.png" alt="paypal partner" />
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*V3xSAgUmd9QDjCZaDHrvYQ.jpeg" alt="paypal partner" />
           </div>
           <div className="project__body">
             <div className="project__overview">
@@ -94,7 +94,7 @@ const Work = () => {
 
         <div className="project project--coral">
           <div className="project__image">
-            <img src="/assets/images/vault.png" alt="paypal partner" />
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*dSw_ANEgT7v4REnklqBiNA.jpeg" alt="paypal partner" />
           </div>
           <div className="project__body">
             <div className="project__overview">
