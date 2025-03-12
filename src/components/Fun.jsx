@@ -58,7 +58,7 @@ const Fun = () => {
 
   return (
     <div className="">
-      <p className="books_title" style={{fontWeight: 700}}>&mdash; books I love (੭˃ᴗ˂)੭⋆˚⟡˖ ࣪</p>
+      <p className="books_title" style={{fontWeight: 700}}>&mdash; Just Me & <span className='text-gray-500'>My Sketchbook (੭˃ᴗ˂)੭⋆˚⟡˖</span>  ࣪</p>
       <div className={styles.main}>
       <div className={styles.spacer}></div>
       <div ref={gallery} className={styles.gallery}>

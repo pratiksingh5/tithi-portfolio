@@ -1796,6 +1796,12 @@ a.pp-link:hover {
   background-image: url("https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.2/assets/svg/1f380.svg");
 }
 
+.twa-sparkles {
+  background-image: url("https://www.svgrepo.com/show/407500/sparkles.svg");
+}
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -1973,7 +1979,7 @@ a.pp-link:hover {
 
 
 .books_title{
-  font-size: 5vw !important;
+  font-size: 3vw !important;
   padding: 4rem;
   padding-left: 15%;
 }
@@ -1983,4 +1989,75 @@ a.pp-link:hover {
   font-weight: 400;
   font-style: normal;
   font-size: 6vw;
+}
+
+.loader_wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  --c:no-repeat linear-gradient(orange 0 0);
+  background: var(--c),var(--c),var(--c),var(--c);
+  background-size: 21px 21px;
+  animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l5 {
+ 0%   {background-position: 0    0,100% 0   ,100% 100%,0 100%}
+ 33%  {background-position: 0    0,100% 0   ,100% 100%,0 100%;width:60px;height: 60px}
+ 66%  {background-position: 100% 0,100% 100%,0    100%,0 0   ;width:60px;height: 60px}
+ 100% {background-position: 100% 0,100% 100%,0    100%,0 0   }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  opacity: 0;
+  animation: fadeInSlideUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  animation-fill-mode: both;
+}
+
+.mobile-blog{
+  opacity: 0;
+  animation: fadeInSlideUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  animation-fill-mode: both;
+}
+
+/* For Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Light background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FDA9FA; /* Pink scrollbar */
+  border-radius: 10px;
+  transition: background 0.3s;
 }

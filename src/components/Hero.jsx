@@ -30,7 +30,6 @@ const Hero = () => {
                 </p>
               </div>
               <div className="side-project__ribbon hide-on-mobile">
-                {/* <img src={ribbon} alt="ribbon" /> */}
                 <Image src={ribbon} alt="rrr" />
               </div>
             </div>

@@ -1,7 +1,12 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+
   return (
     <div className="navbar-wrapper">
       <nav className="navbar" id="navbar">
@@ -12,11 +17,11 @@ const Header = () => {
           </a>
         </div>
         <ul className="navbar__links">
-          <li className="navbar__link">
+           <li className={`navbar__link ${pathname === "/" ? "font-semibold" : ""}`}>
             <Link href="/">home</Link>
           </li>
           <li>/</li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${pathname === "/about" ? "font-semibold" : ""}`}>
             <Link href="/about">about</Link>
           </li>
         </ul>

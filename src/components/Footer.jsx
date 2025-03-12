@@ -5,29 +5,29 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="footer__divider">
-          <div className="divider">
-            <i className="divider__icon twa twa-lg twa-sparkles"></i>
-          </div>
+        <div className="divider">
+        <i className="divider__icon twa twa-lg twa-ribbon"></i>
+      </div>
         </div>
         <h3 className="footer__content">
-          i'd love to chat about design, kdramas, or good food!
+        i'm passionate about anime, K-dramas, writing, and crafting compelling stories!
           <i className="twa twa-love-letter"></i>
         </h3>
-        <ul className="links">
+        <ul className="links" style={{marginTop:"1rem"}}>
           <li>
-            <a target="_blank" href="mailto: joannecho.ux@gmail.com">
+            <a target="_blank" href="mailto: tithichoudhary@gmail.com">
               email
             </a>
           </li>
           <li>/</li>
           <li>
-            <a target="_blank" href="https://www.instagram.com/joanne.cho/">
+            <a target="_blank" href="https://www.instagram.com/ms_choudharain">
               instagram
             </a>
           </li>
           <li>/</li>
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/joannecho96/">
+            <a target="_blank" href="https://www.linkedin.com/in/tithi-choudhary/">
               linkedin
             </a>
           </li>
