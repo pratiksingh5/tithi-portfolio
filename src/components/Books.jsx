@@ -1,10 +1,28 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
-import Picture1 from "../../public/images/book1.jpg";
 import Lenis from "lenis";
-
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import Book1 from "../../public/images/book1.png"
+import Book2 from "../../public/images/book2.webp"
+// import Book3 from "../../public/images/book3.webp"
+import Book4 from "../../public/images/book4.jpg"
+// import Book5 from "../../public/images/book5.webp"
+import Book6 from "../../public/images/book6.webp"
+import Book7 from "../../public/images/book7.png"
+import Book8 from "../../public/images/book8.jpg"
+import Book9 from "../../public/images/book9.jpg"
+import Book10 from "../../public/images/book10.jpg"
+import Book11 from "../../public/images/book11.jpg"
+import Book12 from "../../public/images/book12.jpg"
+import Book13 from "../../public/images/book13.jpg"
+import Book14 from "../../public/images/book14.jpg"
+import Book15 from "../../public/images/book15.jpg"
+import Book16 from "../../public/images/book16.jpg"
+
+const books1Arr = [Book1, Book2, Book4, Book6, Book7, Book8, Book9]
+const books2Arr = [ Book10, Book11, Book12, Book13, Book14, Book15, Book16]
+
 
 const Books = () => {
   const container = useRef();
@@ -25,34 +43,25 @@ const Books = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <div className="h-[15vh]"></div>
+      <div className="h-[20vh]"></div>
 
       <div ref={container} className="flex flex-col gap-8">
         <BookSlide
-          src={Picture1}
           direction={"left"}
           left={"0%"}
           progress={scrollYProgress}
         />
-        <div className="h-[20vh] container">
-          <p
-            className="container__title"
-            style={{ fontWeight: 700, fontSize: "28px" }}
-          >
-            &mdash; books I love (੭˃ᴗ˂)੭⋆˚⟡˖ ࣪
-          </p>
+        <div className="h-[10vh] container">
         </div>
 
         <Slide
-          //   src={Picture1}
-          images={[Picture1, Picture1, , Picture1, Picture1, Picture1, Picture1, Picture1, Picture1, Picture1, Picture1]}
+          images={books1Arr}
           direction={"right"}
           left={"-20%"}
           progress={scrollYProgress}
         />
         <Slide
-          //   src={Picture1}
-          images={[Picture1, Picture1, , Picture1, Picture1, Picture1, Picture1, Picture1, Picture1, Picture1, Picture1]}
+          images={books2Arr}
           direction={"left"}
           left={"-20%"}
           progress={scrollYProgress}
@@ -97,9 +106,8 @@ const BookSlide = (props) => {
       className="relativ flex  gap-8 w-full whitespace-nowrap"
     >
       <div className="homemade-apple-regular">
-        Books. books. books.Books. books. books. Books. books. books.Books.
-        books. books.Books. books. books.Books. books. books. Books. books.
-        books. Books. books. books. Books. books. books.{" "}
+        Books I love. books i love. books i love. Books I love. books. books.Books.
+        books.{" "}
       </div>
     </motion.div>
   );
