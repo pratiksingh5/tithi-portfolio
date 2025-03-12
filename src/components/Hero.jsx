@@ -1,5 +1,5 @@
 import React from "react";
-import ribbon from "../../public/images/ribbon.png"
+import ribbon from "../../public/images/ribbon.png";
 import Image from "next/image";
 
 const Hero = () => {
@@ -23,10 +23,12 @@ const Hero = () => {
                 <h2>
                   business analyst by day,
                   <br className="hide-on-mobile" />
-                  kdrama enthusiast by night <i className="twa twa-sparkles"></i>
+                  kdrama enthusiast by night{" "}
+                  <i className="twa twa-sparkles"></i>
                 </h2>
                 <p>
-                as a business analyst and book lover, I love using insight and empathy to create meaningful experiences!
+                  as a business analyst and book lover, I love using insight and
+                  empathy to create meaningful experiences!
                 </p>
               </div>
               <div className="side-project__ribbon hide-on-mobile">

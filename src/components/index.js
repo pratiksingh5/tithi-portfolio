@@ -1,9 +1,9 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Work from "./Work";
-import Fun from "./Fun";
+import Blogs from "./Blogs";
+import Drawings from "./Drawings";
 import About from "./About";
+import Books from "./Books";
 
-
-export { Header, Footer, Fun, Work, Hero, About}
+export { Header, Footer, Drawings, Blogs, Hero, About, Books}

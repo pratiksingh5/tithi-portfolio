@@ -20,11 +20,9 @@ export const metadata = {
   author: "Tithi Choudhary",
   applicationName: "Tithi Choudhary Portfolio",
   generator: "Next.js",
-  themeColor: "#ffffff",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
   canonical: "https://tithichoudhary.netlify.app",
-  
+
   openGraph: {
     title: "Tithi Choudhary | Business Analyst & Blog Writer",
     description:
@@ -44,12 +42,12 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>

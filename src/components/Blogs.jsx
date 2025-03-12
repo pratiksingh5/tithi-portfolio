@@ -5,7 +5,7 @@ import Blog2 from "../../public/images/Blog2.jpeg";
 import Blog3 from "../../public/images/blog3.webp";
 import Blog4 from "../../public/images/blog4.webp";
 
-const Work = () => {
+const Blogs = () => {
   return (
     <div className="container">
       <p className="container__title" style={{ fontSize: "3vw" }}>
@@ -260,4 +260,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Blogs;

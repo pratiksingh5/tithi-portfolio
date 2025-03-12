@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Fun.module.css'
 import Image from 'next/image';
-import Lenis from '@studio-freight/lenis'
+import Lenis from "lenis";
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const images = [
@@ -20,7 +20,7 @@ const images = [
   "12.jpeg",
 ]
 
-const Fun = () => {
+const Drawings = () => {
 
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({width:0, height:0});
@@ -95,4 +95,4 @@ const Column = ({images, y}) => {
   )
 }
 
-export default Fun;
+export default Drawings;

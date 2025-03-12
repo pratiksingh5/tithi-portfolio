@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { Header, Footer, Hero, Fun, Work } from "@/components";
-import Books from "@/components/Books";
+import { Header, Footer, Hero, Drawings, Blogs , Books} from "@/components";
 
 export default function Home() {
   return (
     <div className="w-full h-full" suppressHydrationWarning>
       <Header />
       <Hero />
-      <Books/>
-      <Work />
-      <Fun />
-
+      <Books />
+      <Blogs />
+      <Drawings />
       <Footer />
     </div>
   );
