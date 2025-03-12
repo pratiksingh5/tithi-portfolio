@@ -105,7 +105,7 @@ const BookSlide = (props) => {
       style={{ x: translateX, left: props.left }}
       className="relativ flex  gap-8 w-full whitespace-nowrap"
     >
-      <div className="homemade-apple-regular">
+      <div className="homemade-apple-regular font-homemadeApple">
         Books I love. books i love. books i love. Books I love. books. books.Books.
         books.  Books I love. books i love. {" "}
       </div>
