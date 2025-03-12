@@ -8,7 +8,7 @@ import Blog4 from "../../public/images/blog4.webp";
 const Blogs = () => {
   return (
     <div className="container">
-      <p className="container__title" style={{ fontSize: "3vw" }}>
+      <p className="container__title text-2xl md:text-[3vw]">
         &mdash; my Poems ✿
         <span className="container__subtitle">
           you can see all of my poems & blogs in the medium!
